@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   render() {
-    return <CardList monster={this.state.monsters} />;
+   return  <CardList monster = {this.state.monsters}/>
   }
 }
 export default App;

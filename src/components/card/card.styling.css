@@ -1,0 +1,18 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: blueviolet;
+  padding: 40px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-out;
+}
+
+.cards:hover {
+  transform: scale(1.05);
+
+}

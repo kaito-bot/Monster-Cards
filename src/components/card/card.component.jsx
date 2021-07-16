@@ -2,5 +2,10 @@ import React from "react";
 import "./card.styling.css";
 
 export const Card = (props) => {
-  return <h3>{props.monster.name}</h3>;
+  return (
+    <div className="cards">
+      <img src={`https://robohash.org/${props.monster.id}?set=set3&size=200x200`} alt="monster" />
+      <h2>{props.monster.name}</h2>
+    </div>
+  );
 };
