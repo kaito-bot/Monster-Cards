@@ -3,11 +3,9 @@ import "./card.styling.css";
 
 export const Card = (props) => {
   return (
-    <div className="cards">
+    <div className="cards" onClick = {props.onClickCard}>
       <img
-        src={`https://robohash.org/${
-          props.monster.id
-        }?set=set2&size=200x200`}
+        src={`https://robohash.org/${props.monster.id}?set=set2&size=200x200`}
         alt="monster"
       />
       <h2>{props.monster.name}</h2>

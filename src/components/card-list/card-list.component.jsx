@@ -5,7 +5,14 @@ export const CardList = (props) => {
   return (
     <div className="card-list">
       {props.monster.map((monster) => {
-        return <Card key={monster.id} monster={monster} />;
+        return (
+          <Card
+            key={monster.id}
+            id={monster.id}
+            monster={monster}
+            onClickCard={props.handleClickCard}
+          />
+        );
       })}
     </div>
   );
