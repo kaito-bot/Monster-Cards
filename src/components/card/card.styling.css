@@ -4,7 +4,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: blueviolet;
+  background-color: #18caca;
   padding: 40px 40px;
   border-radius: 10px;
   cursor: pointer;
@@ -14,5 +14,5 @@
 
 .cards:hover {
   transform: scale(1.05);
-
+  
 }

@@ -7,6 +7,7 @@ class App extends Component {
     super();
     this.state = {
       monsters: [],
+      searchField: "",
     };
   }
 
@@ -17,7 +18,11 @@ class App extends Component {
   }
 
   render() {
-   return  <CardList monster = {this.state.monsters}/>
+    return (
+      <div>
+        <CardList monster={this.state.monsters} />
+      </div>
+    );
   }
 }
 export default App;
