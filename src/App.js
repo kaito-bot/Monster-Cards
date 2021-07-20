@@ -31,15 +31,21 @@ class App extends Component {
     };
 
     //clickHandler for searchBox
-    const handleClick = (e) => this.setState({ searchField: e.target.value });
+    const handleChange = (e) => this.setState({ searchField: e.target.value });
 
     return (
       <div>
-        <SearchBox placeHolder="Search the monster" handleClick={handleClick} />
+        <h1>Monsterque</h1>
+        <SearchBox
+          placeHolder="Search the monster"
+          handleChange={handleChange}
+        />
+
         <CardList
           monster={filteredMonsters}
           handleClickCard={handleClickCard}
         />
+        <div className="footer"></div>
       </div>
     );
   }

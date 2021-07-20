@@ -4,15 +4,21 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: #18caca;
-  padding: 40px 40px;
+  background-color: #05c7c0;
+  padding: 40px 20px;
+  margin: 5px;
+
   border-radius: 10px;
+  border: white 1px solid;
   cursor: pointer;
   backface-visibility: hidden;
-  transition: transform 0.5s ease-out;
+  transition: transform 0.3s ease-out;
+  font-family: cursive;
+  font-weight: bold;
+  color: aliceblue;
+  text-shadow: 3px 1px black;
 }
 
 .cards:hover {
-  transform: scale(1.05);
-  
+  transform: scale(1.02);
 }
