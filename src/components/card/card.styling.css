@@ -22,3 +22,9 @@
 .cards:hover {
   transform: scale(1.02);
 }
+
+@media (min-width: 320px) and (max-width: 780px) {
+  .cards {
+    width: 30rem;
+  }
+}
